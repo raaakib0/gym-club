@@ -1,6 +1,8 @@
 import React from "react";
 import { useEffect, useState } from 'react';
 import Activities from "../Activities/Activities";
+import Header from "../Header/Header";
+import WorkOut from "../WorkOut/WorkOut";
 import './MainPage.css';
 
 
@@ -14,34 +16,41 @@ function MainPage() {
             .then(res => res.json())
             .then(data => setActivities(data))
     }, [])
-    
-    const [WorkOut, setWorkOut] = useState([]);
+
+    const [WorkOutDetails, setWorkOutDetails] = useState([]);
 
     const buttonFunction = (activiti) => {
         console.log(activiti);
-        const updateWorkOut = [...WorkOut, activiti];
-        setWorkOut(updateWorkOut);
+        const updateWorkOutDetails = [...WorkOutDetails, activiti];
+        setWorkOutDetails(updateWorkOutDetails);
     }
 
     return (
-        <div className="container">
-
-            <div className="main-page-card-container">
-                {
-                    activities.map(activiti => <Activities
-                        key={activiti.id}
-                        activiti={activiti}
-                        buttonFunction={buttonFunction}
-                    ></Activities>)
-                }
+        <div>
+            <div>
+                <Header></Header>
             </div>
 
-            <div className="WorkOut-container">
-                <h1>hello im WorkOut {WorkOut.length}</h1>
-            </div>
+            <div className="container">
 
+                <div className="main-page-card-container">
+                    {
+                        activities.map(activiti => <Activities
+                            key={activiti.id}
+                            activiti={activiti}
+                            buttonFunction={buttonFunction}
+                        ></Activities>)
+                    }
+                </div>
+
+                <div className="WorkOut-container">
+                    <WorkOut
+                        WorkOutDetails={WorkOutDetails}
+                    ></WorkOut>
+                </div>
+
+            </div>
         </div>
-
     );
 }
 

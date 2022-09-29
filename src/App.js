@@ -1,11 +1,10 @@
 import './App.css';
-import Card from './components/MainPage/MainPage';
+import MainPage from './components/MainPage/MainPage';
 
 function App() {
   return (
     <div className="App">
-      <Card></Card>
-      {/* <WorkOut></WorkOut> */}
+      <MainPage></MainPage>
     </div>
   );
 }
