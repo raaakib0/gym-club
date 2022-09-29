@@ -3,6 +3,9 @@ import './WorkOut.css';
 
 
 function WorkOut(props) {
+    const { WorkOutDetails } = props;
+    console.log(WorkOutDetails)
+
     return (
         <div className="WorkOut-container">
             {/* user information */}
@@ -46,7 +49,7 @@ function WorkOut(props) {
 
             <div className="exercise-details">
                 <p>Exercise time</p>
-                <p>10s</p>
+                <p>{WorkOutDetails.time} seconds</p>
             </div>
             <div className="exercise-details">
                 <p>Break time</p>

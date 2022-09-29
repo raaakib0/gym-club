@@ -20,7 +20,7 @@ function MainPage() {
     const [WorkOutDetails, setWorkOutDetails] = useState([]);
 
     const buttonFunction = (activiti) => {
-        console.log(activiti);
+        // console.log(activiti);
         const updateWorkOutDetails = [...WorkOutDetails, activiti];
         setWorkOutDetails(updateWorkOutDetails);
     }
@@ -30,7 +30,7 @@ function MainPage() {
             <div>
                 <Header></Header>
             </div>
-
+            <h1>Select today’s exercise</h1>
             <div className="container">
 
                 <div className="main-page-card-container">
