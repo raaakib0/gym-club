@@ -14,7 +14,7 @@
 }
 
 .add-button {
-    background-color: aquamarine;
+    background-color: tomato;
     border: none;
     border-radius: 20px;
     width: 90%;
@@ -23,5 +23,5 @@
     bottom: 0;
 }
 .add-button:hover{
-    background-color: aqua;
+    background-color: rgb(180, 72, 72);
 }

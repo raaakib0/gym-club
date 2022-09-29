@@ -21,7 +21,7 @@ function WorkOut(props) {
                 </div>
             </div>
 
-            <div className="user-info">
+            <div className="user-info background">
                 <div className="user-text">
                     <h2>75 <small>kg</small> </h2>
                     <p>weight</p>
@@ -39,7 +39,7 @@ function WorkOut(props) {
             {/* braeak time */}
 
             <h2>Add A Break</h2>
-            <div className="user-info">
+            <div className="user-info background">
                 <p>10s</p>
                 <p>10s</p>
                 <p>10s</p>
@@ -51,11 +51,11 @@ function WorkOut(props) {
             
             <h3>Exercise Details</h3>
 
-            <div className="exercise-details">
+            <div className="exercise-details background">
                 <p>Exercise time</p>
                 <p>{totalTime} seconds</p>
             </div>
-            <div className="exercise-details">
+            <div className="exercise-details background">
                 <p>Break time</p>
                 <p>10s</p>
             </div>

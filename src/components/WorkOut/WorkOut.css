@@ -1,5 +1,5 @@
 .WorkOut-container {
-    background-color: aqua;
+    background-color: tomato;
     margin-left: 20px;
     position: sticky;
     top: 0;
@@ -30,4 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.background{
+    background-color: aliceblue;
 }
