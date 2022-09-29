@@ -4,7 +4,11 @@ import './WorkOut.css';
 
 function WorkOut(props) {
     const { WorkOutDetails } = props;
-    console.log(WorkOutDetails)
+    // console.log(WorkOutDetails)
+    let totalTime = 0;
+    for (const activities of WorkOutDetails) {
+        totalTime = totalTime + activities.time;
+    }
 
     return (
         <div className="WorkOut-container">
@@ -49,7 +53,7 @@ function WorkOut(props) {
 
             <div className="exercise-details">
                 <p>Exercise time</p>
-                <p>{WorkOutDetails.time} seconds</p>
+                <p>{totalTime} seconds</p>
             </div>
             <div className="exercise-details">
                 <p>Break time</p>
