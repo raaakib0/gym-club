@@ -1,4 +1,33 @@
 .WorkOut-container {
-   background-color: aqua;
-   margin-left: 20px;
+    background-color: aqua;
+    margin-left: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.user-info img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-text h2 {
+    margin-bottom: 0;
+}
+
+.user-text p {
+    margin-top: 0;
+}
+
+.exercise-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
