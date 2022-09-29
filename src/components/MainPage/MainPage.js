@@ -13,8 +13,15 @@ function MainPage() {
         fetch('activities.json')
             .then(res => res.json())
             .then(data => setActivities(data))
+    }, [])
+    
+    const [WorkOut, setWorkOut] = useState([]);
+
+    const buttonFunction = (activiti) => {
+        console.log(activiti);
+        const updateWorkOut = [...WorkOut, activiti];
+        setWorkOut(updateWorkOut);
     }
-        , [])
 
     return (
         <div className="container">
@@ -24,12 +31,13 @@ function MainPage() {
                     activities.map(activiti => <Activities
                         key={activiti.id}
                         activiti={activiti}
+                        buttonFunction={buttonFunction}
                     ></Activities>)
                 }
             </div>
 
             <div className="WorkOut-container">
-                <h1>hello im WorkOut {activities.length}</h1>
+                <h1>hello im WorkOut {WorkOut.length}</h1>
             </div>
 
         </div>

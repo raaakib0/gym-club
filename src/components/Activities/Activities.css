@@ -1,9 +1,27 @@
 .Activities-container {
-    width: 300px;
+    width: 250px;
     height: 400px;
+    border: 2px solid silver;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
 }
 
 .Activities-container img {
-    width: 300px;
+    width: 250px;
     height: 200px;
+    border-radius: 20px;
+}
+
+.add-button {
+    background-color: aquamarine;
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+    height: 7%;
+    position: absolute;
+    bottom: 0;
+}
+.add-button:hover{
+    background-color: aqua;
 }
