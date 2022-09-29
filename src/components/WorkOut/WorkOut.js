@@ -10,6 +10,11 @@ function WorkOut(props) {
         totalTime = totalTime + activities.time;
     }
 
+    const breakTime = (brtime) => {
+        const a = document.getElementById('breakTimeValue');
+        a.innerText =  brtime ;
+    }
+
     return (
         <div className="WorkOut-container">
             {/* user information */}
@@ -38,17 +43,19 @@ function WorkOut(props) {
 
             {/* braeak time */}
 
+
             <h2>Add A Break</h2>
             <div className="user-info background">
-                <p>10s</p>
-                <p>10s</p>
-                <p>10s</p>
-                <p>10s</p>
-                <p>10s</p>
+                <button onClick={() => breakTime('10 seconds')}>10 s</button>
+                <button onClick={() => breakTime('20 seconds')}>20 s</button>
+                <button onClick={() => breakTime('30 seconds')}>30 s</button>
+                <button onClick={() => breakTime('40 seconds')}>40 s</button>
+                <button onClick={() => breakTime('50 seconds')}>50 s</button>
+
             </div>
 
             {/* Exercise details */}
-            
+
             <h3>Exercise Details</h3>
 
             <div className="exercise-details background">
@@ -57,7 +64,7 @@ function WorkOut(props) {
             </div>
             <div className="exercise-details background">
                 <p>Break time</p>
-                <p>10s</p>
+                <p id="breakTimeValue">0 second</p>
             </div>
 
             <h1>hello im WorkOut {props.WorkOutDetails.length}</h1>

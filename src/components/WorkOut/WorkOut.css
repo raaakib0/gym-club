@@ -33,4 +33,18 @@
 }
 .background{
     background-color: aliceblue;
+
+}
+button {
+    background-color: tomato;
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+    height: 7%;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ padding: 5px;
+}
+button:hover{
+    background-color: lightsalmon;
 }
