@@ -1,6 +1,5 @@
 import './App.css';
-import Card from './components/Card/Card';
-import WorkOut from './components/Work-Out/WorkOut';
+import Card from './components/MainPage/MainPage';
 
 function App() {
   return (

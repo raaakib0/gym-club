@@ -1,9 +1,10 @@
 import React from "react";
 import { useEffect, useState } from 'react';
-import './Card.css';
+import Activities from "../Activities/Activities";
+import './MainPage.css';
 
 
-function Card() {
+function MainPage() {
 
 
     const [activities, setActivities] = useState([]);
@@ -18,8 +19,13 @@ function Card() {
     return (
         <div className="container">
 
-            <div className="card-container">
-                <h1>hello {activities.length}</h1>
+            <div className="main-page-card-container">
+                {
+                    activities.map(activiti => <Activities
+                        key={activiti.id}
+                        activiti={activiti}
+                    ></Activities>)
+                }
             </div>
 
             <div className="WorkOut-container">
@@ -31,4 +37,4 @@ function Card() {
     );
 }
 
-export default Card;
+export default MainPage;
