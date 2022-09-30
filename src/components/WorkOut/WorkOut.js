@@ -1,5 +1,8 @@
 import React from "react";
 import './WorkOut.css';
+// import { toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+// toast.configure()
 
 
 function WorkOut(props) {
@@ -12,8 +15,12 @@ function WorkOut(props) {
 
     const breakTime = (brtime) => {
         const a = document.getElementById('breakTimeValue');
-        a.innerText =  brtime ;
+        a.innerText = brtime;
     }
+
+    // const notify = () => {
+    //     toast('Complete')
+    // }
 
     return (
         <div className="WorkOut-container">
@@ -28,16 +35,16 @@ function WorkOut(props) {
 
             <div className="user-info background">
                 <div className="user-text">
-                    <h2>75 <small>kg</small> </h2>
-                    <p>weight</p>
+                    <h2>60 <small>kg</small> </h2>
+                    <p>Weight</p>
                 </div>
                 <div className="user-text">
-                    <h2>75 <small>kg</small> </h2>
-                    <p>weight</p>
+                    <h2>5.7"<small>ft</small> </h2>
+                    <p>Height</p>
                 </div>
                 <div className="user-text">
-                    <h2>75 <small>kg</small> </h2>
-                    <p>weight</p>
+                    <h2>25 <small>yr</small> </h2>
+                    <p>Age</p>
                 </div>
             </div>
 
@@ -67,7 +74,9 @@ function WorkOut(props) {
                 <p id="breakTimeValue">0 second</p>
             </div>
 
-            <h1>hello im WorkOut {props.WorkOutDetails.length}</h1>
+           
+            <button className="background activity-completed" >Activity Completed</button>
+            
         </div>
     );
 }

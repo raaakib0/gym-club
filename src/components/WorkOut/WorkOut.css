@@ -1,6 +1,7 @@
 .WorkOut-container {
     background-color: tomato;
     margin-left: 20px;
+    margin-right: 20px;
     position: sticky;
     top: 0;
 }
@@ -30,21 +31,30 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 10px;
 }
-.background{
-    background-color: aliceblue;
 
+.background {
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 button {
     background-color: tomato;
     border: none;
     border-radius: 20px;
     width: 90%;
     height: 7%;
- margin-top: 20px;
- margin-bottom: 20px;
- padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
 }
-button:hover{
+
+button:hover {
     background-color: lightsalmon;
+}
+.activity-completed{
+    margin-left: 15px;
 }
