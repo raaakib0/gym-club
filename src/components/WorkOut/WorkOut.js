@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './WorkOut.css';
 // import { toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
@@ -16,7 +16,18 @@ function WorkOut(props) {
     const breakTime = (brtime) => {
         const a = document.getElementById('breakTimeValue');
         a.innerText = brtime;
+        localStorage.setItem("Break-Time", brtime);
     }
+
+    useEffect(() => {
+        const storedTime = localStorage.getItem('Break-Time');
+        console.log(storedTime);
+        if (storedTime) {
+            const a = document.getElementById('breakTimeValue');
+            a.innerText = storedTime;
+        }
+    }, []);
+
 
     // const notify = () => {
     //     toast('Complete')
