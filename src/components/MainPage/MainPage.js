@@ -30,7 +30,7 @@ function MainPage() {
             <div>
                 <Header></Header>
             </div>
-            <h1>Select today’s exercise</h1>
+            <h3>Select today’s exercise</h3>
             <div className="container">
 
                 <div className="main-page-card-container">

@@ -4,7 +4,6 @@ import './WorkOut.css';
 // import 'react-toastify/dist/ReactToastify.css';
 // toast.configure()
 
-
 function WorkOut(props) {
     const { WorkOutDetails } = props;
     // console.log(WorkOutDetails)
@@ -21,7 +20,6 @@ function WorkOut(props) {
 
     useEffect(() => {
         const storedTime = localStorage.getItem('Break-Time');
-        console.log(storedTime);
         if (storedTime) {
             const a = document.getElementById('breakTimeValue');
             a.innerText = storedTime;
@@ -29,9 +27,9 @@ function WorkOut(props) {
     }, []);
 
 
-    // const notify = () => {
-    //     toast('Complete')
-    // }
+    const successfull = () => {
+        alert('successfull');
+    }
 
     return (
         <div className="WorkOut-container">
@@ -86,7 +84,7 @@ function WorkOut(props) {
             </div>
 
            
-            <button className="background activity-completed" >Activity Completed</button>
+            <button onClick={() => successfull() } className="background activity-completed" >Activity Completed</button>
             
         </div>
     );
