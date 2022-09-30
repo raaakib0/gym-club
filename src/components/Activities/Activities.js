@@ -8,7 +8,7 @@ function Activities(props) {
         <div className="Activities-container">
             <div>
                 <img src={img} alt="" />
-                <p>{name}</p>
+                <h2>{name}</h2>
                 <p>{body} </p>
                 <p>Time Requirement : {time} seconds</p>
             </div>

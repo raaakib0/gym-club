@@ -60,7 +60,7 @@ function WorkOut(props) {
             {/* braeak time */}
 
 
-            <h2>Add A Break</h2>
+            <h3>Add A Break</h3>
             <div className="user-info background">
                 <button onClick={() => breakTime('10 seconds')}>10 s</button>
                 <button onClick={() => breakTime('20 seconds')}>20 s</button>

@@ -8,6 +8,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+.question{
+    background-color: aliceblue;
+    border: solid silver;
+    border-radius: 20px;
+    padding: 10px;
+}
 
 @media screen and (max-width:768px) {
     .main-page-card-container {
